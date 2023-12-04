@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="employees.EmployeeEntity">
+        <table name="EMP" schema="SCOTT" catalog=""/>
+        <attributes>
+            <id name="employeeNumber">
+                <column name="EMPNO"/>
+            </id>
+            <basic name="employeeName">
+                <column name="ENAME"/>
+            </basic>
+            <basic name="job">
+                <column name="JOB"/>
+            </basic>
+            <basic name="hiredate">
+                <column name="HIREDATE"/>
+            </basic>
+            <basic name="salary">
+                <column name="SAL"/>
+            </basic>
+            <basic name="commision">
+                <column name="COMM"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
