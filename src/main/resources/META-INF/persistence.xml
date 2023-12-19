@@ -6,7 +6,7 @@
     <persistence-unit name="default">
 
         <mapping-file>DepartmentEntity.xml</mapping-file>
-        <mapping-file>EmployeeEntity.xml</mapping-file>
+        <mapping-file>EmpEntity.xml</mapping-file>
         <properties>
             <property name="toplink.jdbc.url" value="jdbc:oracle:thin:@192.168.56.101:1521:CFINFO"/>
             <property name="toplink.jdbc.driver" value="oracle.jdbc.OracleDriver"/>

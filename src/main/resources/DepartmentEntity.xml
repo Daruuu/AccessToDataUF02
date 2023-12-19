@@ -39,4 +39,27 @@
             </basic>
         </attributes>
     </entity>
+    <entity class="employees.EmpEntity">
+        <table name="EMP" schema="SCOTT" catalog=""/>
+        <attributes>
+            <id name="employee">
+                <column name="EMPNO"/>
+            </id>
+            <basic name="employeeName">
+                <column name="ENAME"/>
+            </basic>
+            <basic name="job">
+                <column name="JOB"/>
+            </basic>
+            <basic name="hiredate">
+                <column name="HIREDATE"/>
+            </basic>
+            <basic name="salary">
+                <column name="SAL"/>
+            </basic>
+            <basic name="department">
+                <column name="DEPTNO"/>
+            </basic>
+        </attributes>
+    </entity>
 </entity-mappings>

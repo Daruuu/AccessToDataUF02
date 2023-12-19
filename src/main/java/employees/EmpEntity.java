@@ -3,20 +3,20 @@ package employees;
 import java.sql.Date;
 import java.util.Objects;
 
-public class EmployeeEntity {
-    private short employeeNumber;
+public class EmpEntity {
+    private short employee;
     private String employeeName;
     private String job;
     private Date hiredate;
     private Integer salary;
-    private Integer commision;
+    private Byte department;
 
-    public short getEmployeeNumber() {
-        return employeeNumber;
+    public short getEmployee() {
+        return employee;
     }
 
-    public void setEmployeeNumber(short employeeNumber) {
-        this.employeeNumber = employeeNumber;
+    public void setEmployee(short employee) {
+        this.employee = employee;
     }
 
     public String getEmployeeName() {
@@ -51,24 +51,24 @@ public class EmployeeEntity {
         this.salary = salary;
     }
 
-    public Integer getCommision() {
-        return commision;
+    public Byte getDepartment() {
+        return department;
     }
 
-    public void setCommision(Integer commision) {
-        this.commision = commision;
+    public void setDepartment(Byte department) {
+        this.department = department;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        EmployeeEntity that = (EmployeeEntity) o;
-        return employeeNumber == that.employeeNumber && Objects.equals(employeeName, that.employeeName) && Objects.equals(job, that.job) && Objects.equals(hiredate, that.hiredate) && Objects.equals(salary, that.salary) && Objects.equals(commision, that.commision);
+        EmpEntity empEntity = (EmpEntity) o;
+        return employee == empEntity.employee && Objects.equals(employeeName, empEntity.employeeName) && Objects.equals(job, empEntity.job) && Objects.equals(hiredate, empEntity.hiredate) && Objects.equals(salary, empEntity.salary) && Objects.equals(department, empEntity.department);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(employeeNumber, employeeName, job, hiredate, salary, commision);
+        return Objects.hash(employee, employeeName, job, hiredate, salary, department);
     }
 }
